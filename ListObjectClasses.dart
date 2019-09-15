@@ -54,69 +54,139 @@
 
 
 
-void main() {
-//   Car nC = Car();
+// void main() {
+// //   Car nC = Car();
 
-//   print(nC.carSetes);  
-//   nC.drive();
+// //   print(nC.carSetes);  
+// //   nC.drive();
   
-//   Car N2C = NormalCar();
+// //   Car N2C = NormalCar();
   
-//   N2C.drive();
+// //   N2C.drive();
   
-  SelfDrivingCar myTesla = SelfDrivingCar('shanghai');
+//   SelfDrivingCar myTesla = SelfDrivingCar('shanghai');
   
   
-  myTesla.drive();
-}
+//   myTesla.drive();
+  
+//   Human zuber = Human(height: 1.7);
+  
+//   print(zuber.height);
+// } 
 
 
-class Car {
-  int carSetes = 5;
+// class Car {
+//   int carSetes = 5;
   
   
-  void drive() { 
-    print('driving');
-  }
-}
+//   void drive() { 
+//     print('driving');
+//   }
+// }
 
-// - inhertience
+// // - inhertience
 
-class ElectricCar extends Car {
-  int charger = 100;
+// class ElectricCar extends Car {
+//   int charger = 100;
   
-}
+// }
 
-// - override
+// // - override
 
-class NormalCar extends Car {
+// class NormalCar extends Car {
   
-  @override
-   void drive() {
-      print('Hello weel');
-    }
-}
+//   @override
+//    void drive() {
+//       print('Hello weel');
+//     }
+// }
 
-// - add
+// // - add
 
-class SelfDrivingCar extends Car {
-  String destination;
+// class SelfDrivingCar extends Car {
+//   String destination;
   
-  SelfDrivingCar (String setDestination) {
-    destination = setDestination;
-  }
+//   SelfDrivingCar (String setDestination) {
+//     destination = setDestination;
+//   }
   
-  @override
-  void drive () {
-    super.drive();
+//   @override
+//   void drive () {
+//     super.drive();
     
-    print('taking towards $destination');
-  }
+//     print('taking towards $destination');
+//   }
   
+// }
+
+// // constructer
+
+// class Human {
+//  double height;
+  
+// //   Human({double height}) {
+// //     this.height = height;
+// //   }
+  
+//   Human({this.height});
+// }
+
+
+
+
+// Functions 
+
+// void main () {
+// //   int result =  calc(5, 2, add); 
+// //   print(result);
+  
+//   Car myCar = Car(drive: driveSlow);
+  
+//   myCar.drive();
+// }
+
+// int add (int num1, int num2) {
+//   return num1 + num2;
+// }
+
+// Function calc = (int num1, int num2, Function calculation) {
+//   return calculation(num1, num2);
+// };
+
+
+// class Car { 
+//   Function drive;
+  
+//   Car({this.drive});
+// }
+
+
+// void driveSlow() {
+//   print('drive slowly');
+// }
+
+// void driveFast() {
+//   print('driving super fast');
+// }
+
+
+
+// Maps
+
+
+Map<String, int> phoneBook = {
+  'Zuber': 1327890932, // keys and values
+  'Ahmed': 1433345345
+};
+
+void main () {
+  print(phoneBook['Zuber']);
+  
+  phoneBook['Lala'] = 1234255244;
+  print(phoneBook['Lala']);
+  
+  print(phoneBook);
 }
-
-
-
 
 
 
